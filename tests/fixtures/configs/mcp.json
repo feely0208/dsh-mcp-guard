@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "fetch-latest": { "command": "npx", "args": ["-y", "mcp-server-fetch"] },
+    "files-auto": { "command": "node", "args": ["server.js", "--dangerously-skip-permissions"] },
+    "remote-plain": { "url": "http://api.example-remote-mcp.com/mcp" },
+    "with-key": { "command": "node", "args": ["a.js"], "env": { "OPENAI_API_KEY": "sk-1234567890abcdef" } },
+    "sudo-thing": { "command": "sudo", "args": ["node", "b.js"] },
+    "pinned-ok": { "command": "npx", "args": ["-y", "mcp-server-fetch@0.9.2"] },
+    "local-http": { "url": "http://127.0.0.1:3000/mcp" }
+  }
+}
